@@ -20,8 +20,8 @@ git push origin --delete xxx
 # 设置ssh key
 ssh-keygen -t rsa -C "youremail"
 
-# 另一终端操作时
-npm install hexo-deployer-git --save #安装hexo-deployer(node_modules文件夹)
+# 另一终端操作时,先安装hexo-deployer-git(会创建node_modules文件夹)
+npm install hexo-deployer-git --save
 
 # ----------日常----------
 
@@ -33,3 +33,6 @@ git commit -m "更新说明"
 
 ## 推送到远程仓库进行备份
 git push -u origin hexo
+
+## 注意
+从github上下载的主题或内容，提交前要删掉所下载文件中的.git相关文件，否则会push失败
