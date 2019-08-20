@@ -23,7 +23,13 @@ ssh-keygen -t rsa -C "youremail"
 # 另一终端操作时
 npm install hexo-deployer-git --save #安装hexo-deployer(node_modules文件夹)
 
-#############日常#############
-git add . #添加更改文件到缓存区
-git commit -m "更新说明" #提交到本地仓库
-git push -u origin hexo #推送到远程仓库进行备份
+# ----------日常----------
+
+## 添加更改文件到缓存区
+git add .
+
+## 提交到本地仓库
+git commit -m "更新说明"
+
+## 推送到远程仓库进行备份
+git push -u origin hexo
