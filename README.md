@@ -1,5 +1,5 @@
 # 设置git全局邮箱和用户名
-git config --global user.name "yourgithubname"
+git config --global user.name "yourgithubname"  
 git config --global user.email "yourgithubemail"
 
 # 查看分支
