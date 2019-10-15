@@ -49,6 +49,11 @@ git pull
 git pull origin master
 ```
 
+# 合并远程和本地的库
+``` shell
+git pull --rebase origin master
+```
+
 # 抓取远程仓库更新
 ``` shell
 git fetch origin
