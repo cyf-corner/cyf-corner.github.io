@@ -94,6 +94,33 @@ git remote set-url origin git@github.com:yourgitname/yourrepname.git
 git remote rm xxx
 ```
 
+# -----动漫人物-----
+
+## 在项目中下载live2d模块
+``` shell
+npm install --save hexo-helper-live2d
+```
+
+## 下载相应的模型（xxx为模型名字）
+``` shell
+npm install live2d-widget-model-xxx
+```
+
+## 配置文件_config.yml引入模型
+``` shell
+live2d:
+ enable: true
+ scriptFrom: local
+ model:
+  use: live2d-widget-model-xxx
+ display:
+  position: right
+  width: 150
+  height: 300
+ mobile:
+  show: false
+```
+
 # --------------------日常--------------------
 
 ## 添加更改文件到缓存区
